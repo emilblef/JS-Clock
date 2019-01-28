@@ -1,0 +1,112 @@
+html {
+    background-image: radial-gradient(circle, #2b518b, #00628b, #006c71, #16714d, #5d7130);
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock {
+    width: 50vw;
+    max-width: 500px;
+    height: 50vw;
+    max-height: 500px;
+    border: 10px solid bisque;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.numbers {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vw;
+    font-weight: bolder;
+    position: absolute;
+    color: darkgray;
+}
+
+.twelve {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.three {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.six {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nine {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.hand {
+    left: 0;
+    top: 50%;
+    background: black;
+    position: absolute;
+    transform-origin: 100% center;
+    transform: translateY(-50%);
+    border-radius: 25px;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.hour-hand {
+    left: 10%;
+    width: 40%;
+    height: 15px;
+    background: black;
+    z-index: 2;
+}
+
+.min-hand {
+    width: 50%;
+    height: 9px;
+    background: black;
+    z-index: 3;
+}
+
+.second-hand {
+    width: 50%;
+    height: 3px;
+    background: red;
+    z-index: 4;
+}
